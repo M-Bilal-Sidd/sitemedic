@@ -12,9 +12,10 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-App-3178C6?logo=typescript&logoColor=white)
 ![Neon](https://img.shields.io/badge/Neon-PostgreSQL-00A878)
 ![Netlify](https://img.shields.io/badge/Netlify-Functions-00C7B7?logo=netlify&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Gemini_AI-Optional_Analysis-5269A5)
 ![Status](https://img.shields.io/badge/Status-Portfolio_Showcase-128071)
 
-[🎬 Watch the Showcase](media/sitemedic-launch.mp4) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#-interface-gallery)
+[🎬 Watch the Showcase](media/sitemedic-launch.mp4) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#site-gallery)
 
 </div>
 
@@ -67,7 +68,10 @@ flowchart LR
 | Interface | React, TypeScript, Vite, Tailwind CSS |
 | Monitoring | Netlify Scheduled Functions, Node.js HTTPS |
 | Persistence | Neon PostgreSQL, restricted roles, transactional incident updates |
+| Optional incident analysis | Google Gemini AI, using sanitized check evidence |
 | Verification | Vitest, PGlite, Playwright |
+
+<a name="site-gallery"></a>
 
 ## 📸 Interface Gallery
 
@@ -77,9 +81,7 @@ flowchart LR
 
 ## 🧠 Engineering Focus
 
-- **Bounded requests:** the browser cannot supply monitoring URLs or trigger a check. The scheduler uses approved targets and does not follow redirects.
 - **Reliable incident history:** duplicate and late observations do not overwrite newer state. Unknown results break a streak without proving downtime.
-- **Monitoring without AI:** the scheduler, persistence, and incident transitions run independently of Gemini.
 - **Showcase build verification:** The application build shown in the film passed 348 Vitest tests and 31 Playwright checks, with 86.43% TypeScript line coverage. Browser checks ran at 360, 390, 768, and 1280 CSS pixels. This case-study repository does not contain the source or test suites.
 
 <details>
@@ -94,6 +96,13 @@ flowchart LR
 7. Mobile polish and portfolio showcase
 
 </details>
+
+## 🎓 Lessons Learned
+
+- **Scheduler reliability:** A successful deploy does not prove a job ran. Verify that the packaged function loads and that a scheduled run writes the expected observations.
+- **Least-privilege database access:** Separate scheduler, reader, and analysis roles so each can perform only its own operations.
+- **SSRF prevention:** Keep exact HTTPS targets on a server-owned allowlist, reject private or local DNS answers, and disable redirects.
+- **AI-independent monitoring:** Persist checks and update incidents without Gemini. Use optional analysis for hypotheses, not for alerting truth or automated repairs.
 
 ## 📌 Project Scope
 
