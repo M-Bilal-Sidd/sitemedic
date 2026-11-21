@@ -15,7 +15,7 @@
 ![Gemini AI](https://img.shields.io/badge/Gemini_AI-Optional_Analysis-5269A5)
 ![Status](https://img.shields.io/badge/Status-Portfolio_Showcase-128071)
 
-[🎬 Watch the Showcase](media/sitemedic-launch.mp4) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#site-gallery)
+[🌐 Explore the Interactive Demo](https://sitemedic-showcase.pages.dev/) · [🎬 Watch the Launch Film](media/sitemedic-launch.mp4) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#site-gallery)
 
 </div>
 
@@ -29,6 +29,11 @@ SiteMedic checks approved HTTPS endpoints on a schedule and keeps a record of
 what responded, when, and how quickly. Repeated failures open an incident;
 repeated healthy checks close it. The dashboard makes it easy to move from a
 status summary to check history and incident details on desktop or mobile.
+
+**[Explore the interactive demo](https://sitemedic-showcase.pages.dev/)** to
+try the read-only dashboard with fictional data. The showcase separately
+labels dated monitoring results, a controlled recovery test, and a saved
+Gemini analysis. It does not show live monitoring status.
 
 ## 🎬 Product Showcase
 
