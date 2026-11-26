@@ -21,7 +21,7 @@
 
 ---
 
-[![Watch the SiteMedic launch film: filtering the fictional dashboard to sites that need attention](media/poster.jpg)](https://sitemedic-showcase.pages.dev/#film)
+![SiteMedic’s fictional dashboard with the response-time drawer open](media/poster.jpg)
 
 ## 💡 Overview
 
