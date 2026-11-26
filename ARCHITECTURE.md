@@ -23,7 +23,7 @@ flowchart TD
 - The scheduler can work without Gemini or a dashboard. The showcased browser
   build is fictional; the hosted read API is not configured.
 
-## Evidence in the film
+## Evidence in the public showcase
 
 | Scene | What it proves | What it does not prove |
 | --- | --- | --- |
@@ -32,7 +32,7 @@ flowchart TD
 | Controlled recovery | An isolated `503 → 503 → 200 → 200` test exercised incident opening and resolution | Recovery of the archived endpoint |
 | Saved Gemini report | One genuine, previously authorized analysis used a sanitized 20-check window | A confirmed root cause, log access, a live AI call, or automated remediation |
 
-Verification shown in the film: **348 Vitest tests**, **31 Playwright checks**
+Verification for the reviewed showcase build: **348 Vitest tests**, **31 Playwright checks**
 and **86.43% TypeScript line coverage**. Offline database tests exercised the
 SQL without using real production history. These results are not a production SLA.
 

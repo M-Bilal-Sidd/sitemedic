@@ -15,13 +15,13 @@
 ![Gemini AI](https://img.shields.io/badge/Gemini_AI-Optional_Analysis-5269A5)
 ![Status](https://img.shields.io/badge/Status-Portfolio_Showcase-128071)
 
-[🌐 Explore the Interactive Demo](https://sitemedic-showcase.pages.dev/) · [🎬 Watch the Launch Film](media/sitemedic-launch.mp4) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#site-gallery)
+[🌐 Explore the Interactive Demo](https://sitemedic-showcase.pages.dev/) · [🎬 Watch the Launch Film](https://sitemedic-showcase.pages.dev/#film) · [🏗️ Architecture](ARCHITECTURE.md) · [📸 Interface Gallery](#site-gallery)
 
 </div>
 
 ---
 
-[![SiteMedic launch film: the fictional dashboard and its response-time drawer](media/poster.jpg)](media/sitemedic-launch.mp4)
+[![Watch the SiteMedic launch film: filtering the fictional dashboard to sites that need attention](media/poster.jpg)](https://sitemedic-showcase.pages.dev/#film)
 
 ## 💡 Overview
 
@@ -37,14 +37,13 @@ Gemini analysis. It does not show live monitoring status.
 
 ## 🎬 Product Showcase
 
-**[▶ Watch / download the 60-second launch film](media/sitemedic-launch.mp4)**
+**[▶ Watch the 30-second launch film in your browser](https://sitemedic-showcase.pages.dev/#film)**
 
-1080p · H.264 · 60 fps delivery · original ambient score and on-screen captions · recorded from the actual interface
+30 seconds · 1920 × 1080 · 30 fps · H.264 video · AAC stereo audio (48 kHz) · on-screen text
 
-The film distinguishes fictional UI data, dated monitoring observations, an
-isolated recovery test, and a saved Gemini analysis of sanitized evidence.
-It was recorded before the portfolio launch; the closing access notice refers
-to the private application source, not this case study.
+The film shows the fictional dashboard, an isolated recovery test, and a saved
+Gemini analysis of sanitized evidence. The showcase also presents dated monitoring
+observations separately. Neither the film nor the showcase displays live status.
 
 ## ✨ Key Features
 
@@ -87,7 +86,7 @@ flowchart LR
 ## 🧠 Engineering Focus
 
 - **Reliable incident history:** duplicate and late observations do not overwrite newer state. Unknown results break a streak without proving downtime.
-- **Showcase build verification:** The application build shown in the film passed 348 Vitest tests and 31 Playwright checks, with 86.43% TypeScript line coverage. Browser checks ran at 360, 390, 768, and 1280 CSS pixels. This case-study repository does not contain the source or test suites.
+- **Showcase build verification:** The reviewed application build passed 348 Vitest tests and 31 Playwright checks, with 86.43% TypeScript line coverage. Browser checks ran at 360, 390, 768, and 1280 CSS pixels. This case-study repository does not contain the source or test suites.
 
 <details>
 <summary>Seven development phases</summary>
