@@ -21,7 +21,7 @@
 
 ---
 
-![SiteMedic’s fictional dashboard with the response-time drawer open](media/poster.jpg)
+![SiteMedic’s fictional dashboard with the response-time drawer open](media/dashboard-preview.jpg)
 
 ## 💡 Overview
 
